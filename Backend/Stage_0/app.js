@@ -5,9 +5,9 @@ const app = express()
 const port = process.env.PORT || 3000
 
 //Email, Current Datetime and Github URL
-const email = 'joeludoye'//process.env.EMAIL 
+const email = process.env.EMAIL
 const current_datetime = new Date().toISOString()
-const github_url = 'github.com'//process.env.GITHUB_URL
+const github_url = process.env.GITHUB_URL
 
 //Enabling CORS for all Origin
 app.use(cors())
@@ -23,5 +23,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Server listening on port ${port}`)
 })
