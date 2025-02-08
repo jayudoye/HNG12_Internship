@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 //Email, Current Datetime and Github URL
 const email = process.env.EMAIL || 'joeludoye@gmail.com';
 const current_datetime = new Date().toISOString();
-const github_url = process.env.GITHUB_URL || 'https://github.com/jayudoye/HNG12_Internship';
+const github_url = process.env.GITHUB_URL || 'https://github.com/jayudoye/publicAPI.git';
 
 //Enabling CORS for all Origin
 app.use(cors());
